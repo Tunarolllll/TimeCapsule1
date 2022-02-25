@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".capsule.AddGoodsFragment">
+
+
+    <ImageView
+        android:id="@+id/iv_picture"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:hint="Item Description"
+        android:textColor="#333"
+        android:layout_margin="16dp"
+        android:lines="4"
+        android:gravity="top"
+        android:visibility="gone"
+        android:layout_below="@+id/iv_picture"
+        android:background="@drawable/bg_edittext"/>
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:hint="Item Location"
+        android:textColor="#333"
+        android:layout_margin="16dp"
+        android:lines="1"
+        android:gravity="top"
+        android:visibility="gone"
+        android:layout_below="@+id/et_content"
+        android:background="@drawable/bg_edittext"/>
+
+    <LinearLayout
+        android:id="@+id/ll_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/et_address"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Category"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_choice"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Choose item category"
+            android:background="#f0f0f0"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:padding="5dp"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:id="@+id/bt_save"
+        android:background="@drawable/ripple_bg_blue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_below="@+id/ll_choose"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:text="Manage" />
+
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_camera_add"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tl_home"/>
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tl_home"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/tab_home_bg"
+        android:layout_alignParentBottom="true"
+        app:tl_iconHeight="23dp"
+        app:tl_iconWidth="23dp"
+        app:tl_indicator_color="@color/tab_home_select"
+        app:tl_indicator_height="0dp"
+        app:tl_textSelectColor="@color/tab_home_select"
+        app:tl_textUnselectColor="@color/tab_home_unselect"
+        app:tl_textsize="12sp"
+        app:tl_underline_color="#DDDDDD"
+        app:tl_underline_height="1dp"
+        app:tl_underline_gravity="TOP"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myCoordinatorLayout"
+        android:layout_above="@+id/tl_home"/>
+
+
+</RelativeLayout>

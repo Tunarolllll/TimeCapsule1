@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f0f0"
+    tools:context=".mine.EditInfoActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Picture"
+            android:textColor="#333"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/h_head"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:riv_border_color="#ffffff"
+            app:riv_border_width="0dp"
+            app:riv_oval="true"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/ic_head"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#333"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:textSize="18sp"
+            android:textColor="#333"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="#333"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:textSize="18sp"
+            android:textColor="#333"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:id="@+id/bt_save"
+        android:background="@drawable/ripple_bg_blue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginTop="40dp"
+        android:text="Save" />
+
+    <TextView
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:id="@+id/bt_password"
+        android:background="@drawable/ripple_bg_blue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginTop="40dp"
+        android:text="Reset Password" />
+
+</LinearLayout>
